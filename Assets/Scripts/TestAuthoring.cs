@@ -10,7 +10,8 @@ public class TestAuthoring : MonoBehaviour,IConvertGameObjectToEntity
 
     public void Convert(Entity entity, EntityManager dstManager, GameObjectConversionSystem converstionSystem)
     {
-        dstManager.AddComponentData(entity,new TestEntity(){num = num});
-        dstManager.AddComponentData(entity,new RotationEulerXYZ(){Value = new Unity.Mathematics.float3(12,45,45)});
+        dstManager.AddComponentData(entity,new JobSystem());
+        // dstManager.AddComponentData(entity,new TestEntity(){num = num});
+        // dstManager.AddComponentData(entity,new RotationEulerXYZ(){Value = new Unity.Mathematics.float3(12,45,45)});
     }
 }
