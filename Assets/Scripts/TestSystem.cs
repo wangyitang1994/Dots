@@ -5,7 +5,8 @@ using Unity.Mathematics;
 using Unity.Transforms;
 using UnityEngine;
 
-// [DisableAutoCreation]
+// [DisableAutoCreation] //禁用自动创建
+[UpdateInGroup(typeof(InitializationSystemGroup))] //将系统放入组
 public class TestSystem : ComponentSystem
 {
     protected override void OnUpdate()
