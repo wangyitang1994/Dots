@@ -5,7 +5,7 @@ using Unity.Mathematics;
 using Unity.Transforms;
 using UnityEngine;
 
-[DisableAutoCreation]
+// [DisableAutoCreation]
 public class TestSystem : ComponentSystem
 {
     protected override void OnUpdate()
