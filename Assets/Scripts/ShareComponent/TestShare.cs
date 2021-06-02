@@ -9,11 +9,13 @@ public struct TestShare : ISharedComponentData,IEquatable<TestShare>
 {
     public int data;
 
+    //共享组件 必须实现这个
     public bool Equals(TestShare other)
     {
         return data == other.data;
     }
 
+    //共享组件 必须重写这个
     public override int GetHashCode()
     {
         int temp = 0;
